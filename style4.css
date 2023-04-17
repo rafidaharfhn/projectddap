@@ -1,0 +1,633 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', serif;
+    background-color: #F9FF21;
+    
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #1E2A78 !important;
+}
+
+.navbar-brand{
+  color: white;  
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
+.nav-link{
+    margin-right: 23px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F9FF21!important;
+}
+
+.nav-link:hover::after{
+    content: '';        
+    display: block;
+    border-bottom: 3px solid#F9FF21 !important;        
+    margin: auto !important;
+    margin-bottom: -8px !important;
+    width: 50% !important;
+    padding-bottom: 5px;        
+}
+
+
+/* SLIDER */
+.carousel-item{
+    margin-top: -40px;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.carousel-item img{
+    margin-top: -70px;
+    filter: grayscale(100%) contrast(50%);
+    
+    
+}
+
+
+.carousel-content {
+    position: absolute;  
+    margin-right: -150px;  
+    right: 25%;
+    top: 35%;
+    z-index: 20;                
+}
+
+.carousel-content h1{
+    color:black;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 52px;
+    text-shadow: 3px 3px  #FFD615;
+    /* word-spacing: 10px; */
+}
+
+.carousel-content button{
+    font-size: 18px;
+    
+    border-radius: 50px;
+    
+    color: black;
+    background-color: #FFD615;
+    box-shadow: 3px 3px black;
+}
+
+.carousel-content button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px #FFD615;
+}
+
+
+/* .carousel-inner .carousel-item:nth-child(2) img{
+    filter: grayscale(1);
+    
+} */
+
+
+.jumbo2 .jumbotron{    
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/hero2.png);  
+    /* filter: brightness(0.8);   */
+    min-height: 100vh;
+}
+
+.jumbo2 button{
+    color: black;
+    background-color: #FFD615;
+    border: none;
+}
+
+.jumbo2 button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* about */
+.h3sec {
+    font-size: 42px;
+   font-weight: bolder;
+    background-color: #FF1F5A;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    color: #F9FF21;
+    text-shadow: black 3px 2px;
+    margin: auto; 
+    margin-top: 120px; 
+    box-shadow: 4px 4px #1E2A78;
+    border: 2px dotted #FFD615;
+}
+
+.bout{
+    color: #FF1F5A;
+    font-size: 14px;
+    background-color: #F6F6F6;
+    box-shadow: #FFD615 15px -15px;
+    padding: 20px 20px 20px 20px;
+}
+
+/* ADOPT */
+.rect{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #1E2A78;
+    box-shadow: 9px 10px 11px rgb(80, 80, 80); 
+    transition: ease-out .2s;
+   margin: auto;
+}
+
+.rect:hover {
+    transform: scale(0.95);
+}
+
+.rect p{
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: #FFD615;
+    letter-spacing: 10px !important;
+    position: absolute;        
+    top: 170px;
+    
+}
+
+.one{
+    transform: rotate(270deg); 
+    left: 0;
+}
+
+.two{
+    transform: rotate(90deg);
+    right: 0;
+    margin-right: 20px;
+}
+
+.img1{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    filter: brightness(1.5);
+
+}
+
+.img2{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    filter: brightness(1.1);
+}
+
+
+
+/* news */
+.card{
+    height: 450px !important;    
+    border: none;
+    box-shadow: 3px 3px 10px #1E2A78;
+}
+.card-title{
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF1F5A;
+}
+
+.card-text{
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    color: #1E2A78;    
+}
+.cardnews{
+    transition: ease-out .2s;
+}
+.cardnews:hover{
+    transform: scale(1.05);
+}
+.card a{
+    text-decoration: none;
+}
+.news button:hover{
+    color:white;
+    background-color: black;    
+}
+
+
+
+
+/* HERO 2 */
+.hero2 h2{
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    word-spacing: 5px;
+    line-height: 45px;
+    color: #F9FF21;    
+}
+
+.hero2 p{
+    font-family: 'Poppins', serif;
+    color: #F6F6F6;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* CONTACT */
+.social-icons li{
+    text-decoration: none !important;
+    display: inline-block;            
+    margin-right: 17px;
+}
+
+.social-icons ul li .fab {
+    font-size: 27px;
+    
+    line-height: 48px;    
+    /* color: rgb(0, 0, 0); */
+}
+.social-icons ul li a {
+    position: relative;
+    display: block;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;    
+    background-color: #F2EFEF;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+
+.social-icons ul li:nth-child(1) a{
+    color: #e4405f;
+}
+
+.social-icons ul li:nth-child(2) a{
+    color: #1DA1F2;
+}
+
+.social-icons ul li:nth-child(3) a{
+    color: #3b5998;
+}
+
+.social-icons ul li:nth-child(1) a:hover {
+    color: white;
+    background-color: #e4405f;
+}
+.social-icons ul li:nth-child(2) a:hover {
+    color: white;
+    background-color:  #1DA1F2;
+}
+
+.social-icons ul li:nth-child(3) a:hover {
+    color: white;
+    background-color: #3b5998;
+}
+.social-icons ul li:nth-child(4) a:hover {
+    background-color: #00c300;
+}
+
+
+
+
+
+/* FOOTER */
+.footer{    
+    background-color: #1E2A78 !important;    
+    color: #FF1F5A!important;
+    font-family: 'Poppins',serif;        
+    margin-top: -35px;
+    padding-top: 30px;
+}
+
+.footer h5{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Poppins',serif;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.footer p{
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    color: #F9FF21 !important;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {     
+    
+    .navbar-brand{
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .nav-link:hover{
+        color: #ffffff!important;
+        width: fit-content;
+    }
+    .nav-link:hover::after{        
+        margin: left!important;        
+        content: '';        
+        display: block;
+        border-bottom: 3px solid #FFD615 !important;            
+        margin-bottom: -8px !important;
+        width: 50% !important;
+        padding-bottom: 5px;  
+    }
+
+    .carousel-content h1{
+        margin-top: -100px;
+        color:black;
+        font-family: 'Poppins', serif;
+        font-weight: bold;
+        font-size: 39px;
+        text-shadow: 1px 1px  #FFD615;        
+    }
+    
+    .carousel-content button{
+        font-size: 14px;        
+        border-radius: 50px;        
+        color: black;
+        background-color: #FFD615;
+        box-shadow: 3px 3px black;
+    }
+    
+    .carousel-content button:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 3px 3px #FFD615;
+    }
+
+    /* SLIDER */
+
+    .carousel-item{  
+        margin-top: auto;      
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    .carousel-item img{        
+        filter: grayscale(100%) contrast(50%);
+        
+    }    
+    
+    .carousel-content {
+        min-width: 100%;
+        position: absolute;  
+        margin-right: -150px;  
+        z-index: 20;                
+    }
+
+    /* ABOUT */
+    .h3sec {
+        font-size: 32px;                
+        padding: 2px 7px 2px 7px;        
+        text-shadow: black 2px 1px;                
+        box-shadow: 2px 2px #1E2A78;
+        border: 1px dotted #FFD615;
+        margin-bottom: 30px;
+    }
+    
+    .bout{        
+        font-size: 12px;        
+        box-shadow: #FFD615 10px -10px;
+        padding: 15px 15px;
+    }
+
+
+    /* ADOPT */
+
+    .adopt{
+        margin-top: -50px;
+    }
+
+    .cardAdopt{
+        margin-top: -50px;
+    }
+
+    .rect{               
+        margin-bottom: 50px;        
+    }            
+    
+    /* news */
+    .news h3{
+        margin-top: 90px;
+    }
+
+    .news2{
+        margin-top: -50px;
+    }
+    .news{
+        margin-top: -70px;
+        margin-bottom: 100px;
+    }
+    .card{
+        margin: auto;
+        margin-bottom: 40px;
+        height: 450px !important;    
+        border: none;
+        box-shadow: 3px 3px 10px #1E2A78;
+    }
+
+    
+    .news button{
+        margin-top: -70px;
+    }
+
+
+    /* HERO 2 */
+    .jumbo2{
+        margin-top: -50px;
+    }
+
+
+    /* footer */
+
+    .subs{
+        margin-top: 20px;
+    }
+    
+    .footer h5{        
+        font-size: 14px;              
+    }
+    
+    .footer p{        
+        font-size: 14px;        
+        letter-spacing: 0;
+    }
+    
+    /* CONTACT */
+    .social-icons li{
+        text-decoration: none !important;
+        display: inline-block;            
+        margin-right: 17px;
+    }
+    
+    .social-icons ul li .fab {
+        font-size: 27px;
+        
+        line-height: 48px;    
+        /* color: rgb(0, 0, 0); */
+    }
+    .social-icons ul li a {
+        position: relative;
+        display: block;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;    
+        background-color: #F2EFEF;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      bottom: 50%;
+    }
+
+    .carousel-indicators {
+        top: 60%;
+    }
+}
+
+@media (min-width: 481px) and (max-width : 767px) {
+
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .carousel-content h1{
+        margin-top: -100px;
+        margin-right: 65%;
+        color:black;
+        font-family: 'Poppins', serif;
+        font-weight: bold;
+        font-size: 45px;
+        text-shadow: 1px 1px  #FFD615;        
+    }
+    
+    .carousel-content button{
+        font-size: 16px; 
+        margin-right : 65%;       
+        border-radius: 50px;        
+        color: black;
+        background-color: #FFD615;
+        box-shadow: 3px 3px black;
+    }
+
+    .carousel-content h1{
+        margin-top: -150px;
+        color:black;
+        font-family: 'Poppins', serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 1px 1px  #FFD615;        
+    }
+    
+    .carousel-content button{
+        
+        font-size: 10px;        
+        border-radius: 50px;        
+        color: black;
+        background-color: #FFD615;
+        box-shadow: 3px 3px black;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      bottom: 50%;
+    }
+
+    .carousel-indicators {
+        top: 42%;
+    }
+    .carousel-item{  
+        margin-top: auto;      
+        height: 95vh;
+        background-size: cover;
+    }
+
+    /* ABOUT */ 
+    .h3sec {
+        font-size: 32px;                
+        padding: 2px 7px 2px 7px;        
+        text-shadow: black 2px 1px;                
+        box-shadow: 2px 2px #1E2A78;
+        border: 1px dotted #FFD615;
+        margin-top : -220px;
+        margin-bottom: 20px;
+    }
+    
+    .bout{    
+        margin-top : -100px;    
+        font-size: 12px;        
+        box-shadow: #FFD615 10px -10px;
+        padding: 15px 15px;
+    } 
+
+    /*ADOPT */
+    .adopt{
+        margin-top: 300px;
+    } 
+    .cardAdopt{
+        margin-top: -100px;
+    }
+
+    .rect{               
+        margin-bottom: 50px;        
+    } 
+    
+    /* NEWS */
+
+    .news h3{
+        margin-top: 100px;
+    }
+
+    .news2{
+        margin-top: -50px;
+    }
+    .news{
+        margin-top: -40px;
+        margin-bottom: 100px;
+    }
+    .card{
+        margin: auto;
+        margin-top : 20px;
+    }
+    .news button{
+        margin-top: 30px;
+    }
+
+    /* CONTACT */
+    .footer h5{        
+        font-size: 13px;              
+    }
+
+}
+
+
+
